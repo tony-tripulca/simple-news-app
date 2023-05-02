@@ -1,5 +1,5 @@
 function searchMovie() {
-  let domain = "http://www.omdbapi.com";
+  let domain = "https://www.omdbapi.com";
   let results = [];
 
   let movieTitle = document.querySelector(".movie-title-input").value;
