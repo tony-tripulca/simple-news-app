@@ -11,7 +11,9 @@ function searchMovie() {
     if (this.readyState == 4 && this.status == 200) {
       let results = JSON.parse(xhttp.responseText).Search;
 
-      let newsRow = document.querySelector(".movies-row");
+      let moviesRow = document.querySelector(".movies-row");
+      moviesRow.innerHTML = "";
+
       results.map((result, key) => {
         let element = document.createElement("div");
         element.classList.add("col-12");
@@ -22,7 +24,7 @@ function searchMovie() {
           class="img-fluid rounded" alt="${result.Title}" />
         </a>
         `;
-        newsRow.appendChild(element);
+        moviesRow.appendChild(element);
       });
     }
   };

@@ -14,8 +14,9 @@ function getMovieDetails() {
       console.log(JSON.parse(xhttp.responseText));
       let res = JSON.parse(xhttp.responseText);
 
-      let newsRow = document.querySelector(".movie-details");
+      let movieDetails = document.querySelector(".movie-details");
       let element = document.createElement("div");
+
       element.classList.add("col-12");
       element.innerHTML = `<div class="card mb-3">
       <div class="row g-0">
@@ -68,7 +69,7 @@ function getMovieDetails() {
         </div>
       </div>
     </div>`;
-      newsRow.appendChild(element);
+      movieDetails.appendChild(element);
     }
   };
 
