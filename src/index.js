@@ -16,13 +16,14 @@ function searchMovie() {
 
       results.map((result, key) => {
         let element = document.createElement("div");
-        element.classList.add("col-12");
         element.classList.add("col-md-3");
         element.innerHTML = `
+        <div class="card">
         <a href="./movie.html?id=${result.imdbID}" alt="${result.Title}">
           <img src="${result.Poster || "./src/assets/movies.jpg"}"
           class="img-fluid rounded" alt="${result.Title}" />
         </a>
+        </div>
         `;
         moviesRow.appendChild(element);
       });
