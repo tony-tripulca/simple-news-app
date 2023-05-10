@@ -28,7 +28,7 @@ function getMovieDetails() {
           <div class="card-body">
             <h5 class="card-title fs-2">
               ${res.Title}
-              <span class="badge bg-primary fs-6">${res.imdbRating}</span>
+              <span class="badge fs-6">${res.imdbRating}</span>
             </h5>
             <div class="row">
               <div class="col-12 mb-3">
