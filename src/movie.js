@@ -19,7 +19,7 @@ function getMovieDetails() {
 
       element.classList.add("col-12");
       element.innerHTML = `<div class="card mb-3">
-      <div class="row g-0">
+      <div class="row">
         <div class="col-md-3">
           <img src="${res.Poster || "./src/assets/movies.jpg"}"
           class="img-fluid rounded-start" alt="..." />
